@@ -1,9 +1,39 @@
 ```
-1. Grel js-i push, pop, shift, unshift funkcianery, shat chcanrabernvel interface-i funkciayi vra:
+Tnayinneri funkcianey kxndrem exnin grvac Class-i mijocov: Uneceq 1 class u tox es amen mi funkcian exni
+Tvyal classi metod: Orinak ` 
+Class Homework {
+    firstExcercise() {
+        //Homework 1.
+    };
+
+    secondExcercise() {
+        //Homework 2.
+    }
+    
+    ... ev ayln
+}
+
 ```
-2. Mtnel es ssilkov => https://coursehunters.net/course/itvdn-es6  
-u nayel 2-rd uroky: ete khascneq nayeq 3-rdn el: Videoyi mej ahagin baner e inqy installacia erel 
-ydonq petq che duq eneq. Duq uxaki nayeq te konkret inchx kbacatre u inch kbacatre: U kodn el porceq voch te
-ira nman ayl henc dzer sovorakan erac dzevov inchx or misht enq erel: Karevor Masery durs greq or dasin
-bdi nerkayacneq te inch eq haskcel: orinak ete kbacatre CONST-i masin, txti vra greq => const: u or ekaq 
-dasin knayeq txtin u kbacatreq te inch e consty u inch sorvaq ed dasic:
+1. https://gm.spoj.com/problems/GSPI75_1/
+```
+2. Trvac e masiv orinak ` [10, 45, 78, 96, 32, 45, 78]: grel funkcia vory vorpes parametr yndunum e mek arjeq ev
+pntrum e te ardyoq trvac parametry masivi mej ka te chka? Ete ka veradarcnum e trvac parametry, ete che 
+veradarcnum e 404: (Koxmnaki funkcianer chogtagorcel): 
+```
+3. Trvac e masiv orinak ` [10, 45, 78, 96, 32, 45, 78]: grel funkcia vory vorpes parametr yndunum e mek arjeq ev
+pntrum u aynuhetev jnjum e ayd masivi tvyal elementy.  Ete stacvec jnjel veradarcnel 200, ete che 
+veradarcnum e 204: (Koxmnaki funkcianer chogtagorcel): 
+```
+4. Trvac e masiv orinak ` [10, 45, 78, 96, 32, 45, 78]: grel funkcia vory vorpes parametr yndunum e erku arjeq ev
+pntrum e te ardyoq 1-in parametry ka masivum? Ete ka poxarinum e ayn 2-rd parametrov, Isk ete chka veradarcnum e 
+404: (Koxmnaki funkcianer chogtagorcel):
+```
+5. Trvac e masiv orinak ` [10, 45, 76, 18, 18, 18, 76]: grel funkcia vory masivic kheracni krknvox elementnery
+toxnelov yndameny 1 orinak amen mi tvic: Orinak tvyal depqum masivy petq e darna => [10, 45, 76, 18]: Popoxutyuny 
+tox texi unena nuyn masivi het:
+```
+6. Trvac e datark masiv: Grel funkcia vory masivi mej kqci 5 hat element random kargov, voronq erbeve chen krknvi: 
+tvery petq e linen [1-10] mijakayqum: Xndiry greluc ogtvel Math.random() - ic ev zgush linel anverj ciklov kompi 
+gloxn uteluc: 
+
+
