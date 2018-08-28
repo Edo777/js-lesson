@@ -2,15 +2,15 @@ class Human {
     eat() {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                console.log("eat");
-                resolve("eat")
+                console.log("1")
+                resolve([1,2,3,4,5,6])
             }, 1000);
         })
     };
     wash() {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                console.log("wash");
+                console.log("2")
                 resolve("wash");
             }, 2000);
         })
@@ -18,7 +18,7 @@ class Human {
     watchTv() {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                console.log("watch tv");
+                console.log("3")
                 resolve("watch tv")
             }, 3000);
         })
@@ -31,6 +31,13 @@ class Human {
 
 let human = new Human();
 
-Promise.all([human.eat(), human.wash(), human.watchTv()]).then((data) => {
-        console.log(data);
+let promisesArray = [human.sit(), human.eat(), human.wash(), human.watchTv()];
+
+let promise = Promise.all(promisesArray);
+
+promise.then((data) => {
+    console.log(data)
+    human.goOut()
+}).catch((err) => {
+    console.log(err)
 })
