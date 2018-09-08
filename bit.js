@@ -30,7 +30,7 @@ class Human {
 }
 
 let human = new Human();
-
+//hello
 let promisesArray = [human.sit(), human.eat(), human.wash(), human.watchTv()];
 
 let promise = Promise.all(promisesArray);
