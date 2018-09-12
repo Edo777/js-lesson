@@ -1,3 +1,1 @@
-let carname = "volvo";
-require("./driver");
-console.log(carname, "--------", drivername);
+console.log(require("./driver"))

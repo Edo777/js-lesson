@@ -1,0 +1,23 @@
+{
+  "name": "js-lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "class.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edo777/js-lesson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edo777/js-lesson/issues"
+  },
+  "homepage": "https://github.com/Edo777/js-lesson#readme",
+  "dependencies": {
+    "express": "1.0.8"
+  }
+}
