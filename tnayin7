@@ -1,0 +1,30 @@
+sarqel server vory klsi terminalic trvac portin u hostin. 
+   orinak => node index.js --port=3000 --host=127.0.0.1
+   unenq nayev user.json fayl vori mej grvac e hetevyaly 
+   {
+       "id" : 1,
+       "username" : "name",
+       "age" : 22
+   }
+
+grel hetevyal funkcionalutyuny`
+1.  erb vor /user/2 url-ov GET zapros anem petq e tesnel user.json fajli mej 2 id-ov user ka te che,
+    ev ete ka veradardznem ayd useri informacian. aysinqn url-i mej /2-y da khandisana drsic trvox id-n:
+    tvyal depqum erb katarem /user/2 zaprosy petq e stanam statusCode=404, isk statusMessage = "user not found",
+    isk ete katarem /user/1 zapros petq e stanam statuscode=200, isk statusMessage="success", ev .end(user.json-i parunakutyun):
+2.  ka nayev admin.json fayly vori parunakutyunn e 
+    {
+        "login" : "admin",
+        "password" : "admin"
+    }
+    erb vor katarem /admin/admin GET metodov zapros petq e admin.json-i mej stugel ete loginn u 
+    passwordy hamapatasxanum en url-i mej grvacin, apa petq e veradardzviuser.json fayli parunakutyuny
+    hamapatasxan statusCode-ov, statusMessage-ov, Content-Type-ov, u .end()-i parunakutyamb inchpes verevum,
+    isk chhamapatasxanelu depqum petq e asel vor login-y kam passwordy sxal er:
+
+KAREVOR HAVELUM ` 
+    serveri stexcely lini ` create-server.js moduleum(faylum), 
+    serveri listen-y ` server.js moduleum,
+    terminalic porti u hosti stacumy ` config.server.js faylum:
+
+
