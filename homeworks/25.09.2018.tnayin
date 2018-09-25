@@ -1,0 +1,24 @@
+unenq hetevyal faylayin strukturan => 
+    -user.data.json
+        -skzbum datark e
+    -user.json
+        -skzbum datark e
+    -index.js
+        -aystex kazmakerpel
+         serveri create-n ev listen-y:
+grel hetevyal funkcionalutyuny => 
+    --usery karoxana grancvel uxarkelov
+      {login, password, address, name, email, surname, age}: 
+      loginn u passwordy pahel user.json faylum, isk mnacac informacian 
+      user.data.json faylum:
+    --usery karoxana login linel uxarkelov loginn u passwordy: 
+    --usery karoxana stanal ir data-n user.data.json-ic: miayn u miayn 
+      login exac usery karoxana stanal user.data.json fayli parunakutyuny:
+    --usery karoxana poxel ir passwordy uxarkelov hin passwordn u nor passwordy:
+      (ete hin passwordy hamapatasxanec irakanutyany nor popoxel, hishecum 
+      update-i depqum xorhurd e trvum ogtagorcel PUT metod, vory ashxatum e nuyn
+      POST metodi nman):
+    --usery karoxana jnjvel uxarkelov ir passwordy: (ogtvel DELETE metodic):
+ogtagorcel => 
+    -postman
+        -qashelu url https://www.getpostman.com/apps
