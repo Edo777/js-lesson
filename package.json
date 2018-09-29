@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Edo777/js-lesson#readme",
   "dependencies": {
+    "crypto": "1.0.1",
     "express": "1.0.8"
   }
 }

@@ -1,10 +1,13 @@
-const db = require("./db");
+const { users } = require("./db");
+
 const { EventEmitter } = require("events");
 const emitter = new EventEmitter();
 
-emitter.on('login-service', (data) => {
+emitter.on('reg-dao', (data) => {
+    data.password.hash()
+    users.push(data);
     setImmediate(() => {
-        emitter.emit('login-dao', db.users);
+        emitter.emit('reg-service', users);
     })
 })
 
