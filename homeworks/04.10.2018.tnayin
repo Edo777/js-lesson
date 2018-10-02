@@ -1,0 +1,15 @@
+stexcel mijavayr vortex goyutyun unen hetevyal resursnery => 
+    -admin
+    -user
+    -car ({id, name, model, prize, userId (default null)})
+
+admin - petq e karoxana katarel hetevyal banery => 
+    -login linel (grancvel petq che, admini username-n e "admin" password-n e "admin")
+    -stexcel meqena (id, name, model, prize(aysinqn gin)):
+    -popoxel meqenayi tvyalnery baci id-ic:
+user - petq e karoxana katarel hetevyal banery => 
+    -grancvel ( username, password(hashavorac inch vor dzevov), id(dzerqov dnel) ):
+    -login linel
+    -gnel avtomeqena (gneluc uxarkum e meqenayi id-n, ev ete ayd meqenayi userId-n
+     null che ` vory nshanakum e vor meqenan arden gnvac e, het e galis vor chi karox
+     gnel ayd meqenan, isk ete null e userId-n darnum e ayn user-i id-n ov vor gnec meqenan)
