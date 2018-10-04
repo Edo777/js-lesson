@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Edo777/js-lesson#readme",
   "dependencies": {
     "crypto": "1.0.1",
-    "express": "1.0.8"
+    "express": "1.0.8",
+    "joi": "13.7.0"
   }
 }
