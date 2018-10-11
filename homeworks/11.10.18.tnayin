@@ -1,0 +1,27 @@
+(amen routi verevy kgreq comment te ed routov inch eq erel):
+ka hetevyal resursnery => 
+    -client => {id, name, balance, phone, address, username, password, isBlocked};
+    -admin => {id, username, password};
+    -car => {id, model, prize, name, date, clientId, isDeleted}:
+admin  
+    -karox e avelacnel meqena
+    -karox e jnjel meqena (isDeleted: false)
+    -karox e popoxel meqenayi tvyalnery
+    -karox e login linel
+    -karox e stanal bolor azat meqenanery
+    -karox e stanal bolor ayn clientnerin ovqer meqena chen gnel
+    -karox e nayev clientin stanal id-ov hetevyal kerp
+    ete clienty meqena chuni veradardzvi miayn clienti tvyalnery,
+    isk ete meqena uni jsonov veradardzvi ev clienti ev meqenayi
+    tvyalnery:
+    -karox e clientin block qcel(isBlocked false):
+    -karox e verakangnel meqenan jnjvac vijakic, inchpes nayev 
+    verakangnel clientin isBlocked vijakic:
+client
+    -karox e grancvel
+    -login linel
+    -gnel meqena(ete balance-n bavarar e =>if balance >= prize):
+    (block exac clienty miayn petq e karoxana login linel:)
+    (chpetq e karoxana gnel jnjvac meqena):
+
+    
