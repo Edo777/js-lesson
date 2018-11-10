@@ -20,6 +20,7 @@
   "dependencies": {
     "crypto": "1.0.1",
     "express": "^4.16.3",
-    "joi": "13.7.0"
+    "joi": "13.7.0",
+    "jsonwebtoken": "8.3.0"
   }
 }

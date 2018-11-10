@@ -8,4 +8,4 @@ server.post('/client/login', Validate.signUp, clientService.login);
 
 server.listen(3000, () => {
     console.log("listening");
-})
+});
