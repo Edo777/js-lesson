@@ -6,8 +6,18 @@ const user = [{
     id : 1,
     name : "edo",
     password: "123"
+},{
+    id : 23,
+    name : "edo",
+    password: "123"
+},{
+    id : 10,
+    name : "edo",
+    password: "123"
 }];
+
 app.use(bodyparser())
+
 app.post('/login', (req, res) => {
     if(req.body.password === user[0].password){
         const token = jwtToken.sign({
@@ -19,19 +29,20 @@ app.post('/login', (req, res) => {
     }
 });
 
-app.use((req, res, next) => {
+app.use('/', (req, res, next) => {
     if(!req.headers.token){
         return res.status(400).send("token musb be");
     }else{
-        jwtToken.verify(req.headers.token, "secret", (err, decoded) => {
+        jwtToken.verify(req.headers.token, "secret21", (err, decoded) => {
             if(err){
-                return res.status(400).send(err);
+                return res.status(401).send(err.name);
             }
-            res.locals["id"] = decoded.id;
+            req.locals["id"] = decoded.id;
             next();
         });
     }
-})
+});
+
 app.get('/', (req, res) => {
     if(user[0].id == res.locals["id"]){
         res.json({"name" : user[0].name})
@@ -39,10 +50,6 @@ app.get('/', (req, res) => {
         res.status(401).send("error");
     }
 })
-
-
-
-
 
 app.listen(3000, () => {
     console.log("listening...");

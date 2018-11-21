@@ -1,0 +1,32 @@
+bazan hetevyaln e => 
+users = [
+    {id : 1, username : "user1", "password" : "user1", "photo" : "some photo", refreshToken : "debhjfbwehjbfhwebh"},
+    {id : 2, username : "user2", "password" : "user2", "photo" : "some photo", refreshToken : "ukhibhjewbfbhiewbi"},
+    {id : 3, username : "user3", "password" : "user3", "photo" : "some photo", refreshToken : "whewhfyiewhbcedewf"}
+]
+
+usermn erb vor uzerneric cankacac meky login exnin, iranc loginy 
+kazmakerpel tokenov, aysinqn loginic heto tal token u refreshToken, token-i mej paheq
+user-i id-n: uxarkelu tesqy => {token : "token", refreshToken : "refreshToken"}
+
+dranic heto usern uni hetevyal metodnery => 
+1.update username - uxarkum e menak nor uzername-y, hiny poxarinum eq norov,
+                  bayc iran gtnelu hamar, aysinqn hasknalu hamar te konkret
+                  vor uzery kuze poxe ira username-y bdi iranic uzeq token
+                  headers-ov {req.headers}, u tokeny bacelov voroshel te vor 
+                  useri id-n pti poxvi:
+2.change password - password poxelu hamar e, uxarkum e hin password-n u 
+                  nor passwordy: ete hamapatasxanum e hiny, poxum eq norov:
+                  stugumneri hamar ogtagorcel voch miayn passwordy ayl nayev
+                  token-i meji id-n:
+3.get user -    uxarkum e tokenn u stanum ir tvyalnery:
+4.refresh token -   erb vor hnanum e tokeny petq e route lini, vorov stana nor token:
+                  uxarkum e logini jamanak tvac refreshToken-y, u gtnum enq
+                  ayd userin u nra hamar nor token geeracnum u het talis noric
+                  nuyn formatov {token : "", refreshToken : ""}: refreshToken-y
+                  bazayum chpetq e nuyny mna, stugeluc heto pet e ayn tarmacvi u 
+                  patasxaneluc objecti mej petq e dnel nor refreshTokeny:
+5. user get another user - A usery uxarkum e B user-i id-n params-ov
+                  u stanum e ayd useri tvyalnery baci password-ic u refreshTokenic:
+                  ays metody petq e ashxati aranc token-i:
+
